@@ -26,6 +26,9 @@
 (set-default 'cursor-type 'hbar)
 (setq ring-bell-function 'ignore)
 
+;; ------ Column number ------
+(column-number-mode 1)
+
 ;; ------ Color theme ------
 (autoload 'color-theme-zenburn "color-theme-zenburn" "Zenburn Color Theme" t)
 (color-theme-zenburn)
