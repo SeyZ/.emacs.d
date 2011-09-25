@@ -7,3 +7,5 @@
 (load-library "seyz-auto-complete")
 
 (load-library "seyz-hide-show")
+
+(load-library "seyz-magit")
