@@ -21,6 +21,11 @@
   (tool-bar-mode)
   (scroll-bar-mode))
 
+;; ------ Configure the cursor ------
+(blink-cursor-mode -1)
+(set-default 'cursor-type 'hbar)
+(setq ring-bell-function 'ignore)
+
 ;; ------ Color theme ------
 (autoload 'color-theme-zenburn "color-theme-zenburn" "Zenburn Color Theme" t)
 (color-theme-zenburn)
