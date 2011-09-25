@@ -4,3 +4,5 @@
 
 (load-library "seyz-ido")
 
+(load-library "seyz-auto-complete")
+
