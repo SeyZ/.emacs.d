@@ -16,3 +16,7 @@
   (menu-bar-mode)
   (tool-bar-mode)
   (scroll-bar-mode))
+
+;; ------ Color theme ------
+(autoload 'color-theme-zenburn "color-theme-zenburn" "Zenburn Color Theme" t)
+(color-theme-zenburn)
