@@ -1,3 +1,7 @@
+; ------ suppress startup message ------
+(setq inhibit-startup-message t
+      initial-scratch-message nil)
+
 ;; ------ Fullscreen ------
 (defun toggle-fullscreen (&optional f)
   (interactive)
