@@ -1,4 +1,10 @@
 ;; ----------------------------------------------------------------------------
+;; Private variables
+;; ----------------------------------------------------------------------------
+(defvar hs--hide-state 
+  nil "Current state of hideshow for toggling all.")
+
+;; ----------------------------------------------------------------------------
 ;; Private functions
 ;; ----------------------------------------------------------------------------
 
@@ -47,3 +53,21 @@
   (interactive)
   (seyz--kill-buffers (delq (current-buffer) (buffer-list)))
   (message "All other buffers are killed"))
+
+;; ------ Toggle hiding block thanks to the hs-mode ------
+(defun toggle-hiding-block (column)
+  (interactive "P")
+  (if hs-minor-mode
+      (if (condition-case nil
+              (hs-toggle-hiding)
+            (error t))
+          (hs-show-all))
+    (toggle-selective-display column)))
+
+;; ------ Toggle hiding all blocks thanks to the hs-mode ------
+(defun toggle-hiding-all ()
+  (interactive)
+  (setq hs--hide-state (not hs--hide-state))
+  (if hs--hide-state
+      (hs-hide-all)
+    (hs-show-all)))
