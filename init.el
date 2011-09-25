@@ -1,6 +1,8 @@
 ;;;; SeyZ - Sandro Munda's Emacs Configuration
 ;;;; <munda.sandro@gmail.com>
 
+(set-language-environment "UTF-8")
+
 ;; ----------------------------------------------------------------------------
 ;; Entry path
 ;; ----------------------------------------------------------------------------
