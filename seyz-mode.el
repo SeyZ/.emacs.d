@@ -9,3 +9,5 @@
 (load-library "seyz-hide-show")
 
 (load-library "seyz-magit")
+
+(load-library "seyz-yasnippet")
