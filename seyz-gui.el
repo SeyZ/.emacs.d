@@ -1,3 +1,9 @@
+;; ------ Get rid of bars ------
+(progn
+  (menu-bar-mode)
+  (tool-bar-mode)
+  (scroll-bar-mode))
+
 ; ------ suppress startup message ------
 (setq inhibit-startup-message t
       initial-scratch-message nil)
@@ -13,12 +19,6 @@
                                   'fullboth)))))
 ;; turn on the fullscreen
 (toggle-fullscreen)
-
-;; ------ Get rid of bars ------
-(progn
-  (menu-bar-mode)
-  (tool-bar-mode)
-  (scroll-bar-mode))
 
 ;; ------ Configure the cursor ------
 (blink-cursor-mode -1)
