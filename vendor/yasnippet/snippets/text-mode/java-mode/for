@@ -1,5 +1,6 @@
-#name : for (...) { ... }
+# -*- mode: snippet -*-
+#name : for
 # --
-for (int ${1:i} = 0; $1 < $2; $1++) {
-    $0
+for(int ${1:i} = ${2:0}; $1 < ${3:collection}.length; $1++) {
+  $0
 }
