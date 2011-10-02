@@ -3,6 +3,8 @@
 (setq eclim-auto-save t)
 (global-eclim-mode)
 
+(load-library "seyz-ac-yas-eclim")
+
 ;; ------ Indentation ------
 (setq c-basic-offset 2)
 
@@ -15,12 +17,12 @@
 (setq c-comment-start-regexp
       "\\(@\\|/\\(/\\|[*][*]?\\)\\)")
 (modify-syntax-entry ?@ "< b"
-		     java-mode-syntax-table)
+                     java-mode-syntax-table)
 
 ;; ------ Highlight the FIXME/TODO/BUG keywords ------
 (font-lock-add-keywords nil
-			'(("\\<\\(FIXME\\|TODO\\|BUG\\)"
-			   1 font-lock-warning-face t)))
+                        '(("\\<\\(FIXME\\|TODO\\|BUG\\)"
+                           1 font-lock-warning-face t)))
 
 ;; ------ Shortcuts ------
 (local-set-key (kbd "C-c i") 'eclim-java-format)
