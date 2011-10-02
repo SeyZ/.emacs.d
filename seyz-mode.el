@@ -13,3 +13,5 @@
 (load-library "seyz-magit")
 
 (load-library "seyz-yasnippet")
+
+(load-library "seyz-perspective")
