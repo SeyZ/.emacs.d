@@ -1,7 +1,7 @@
-(add-to-list 'load-path "/home/seyz/.emacs.d/vendor/yasnippet/")
+(setq my-snippets-dir (concat my-vendor-emacs-dir "yasnippet/snippets/text-mode/"))
 
 (require 'yas-jit)
-(setq yas/root-directory "/home/seyz/.emacs.d/vendor/yasnippet/snippets/text-mode/")
+(setq yas/root-directory my-snippets-dir)
 (yas/jit-load)
 
 (yas/global-mode)
