@@ -15,3 +15,5 @@
 (load-library "seyz-yasnippet")
 
 (load-library "seyz-perspective")
+
+(load-library "seyz-smex")
