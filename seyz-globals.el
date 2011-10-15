@@ -15,10 +15,10 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-(setq x-select-enable-clipboard t)	; Enable the X clipboard
+(setq x-select-enable-clipboard t)      ; Enable the X clipboard
 
 (when window-system
-  (global-unset-key "\C-z"))		; Disable the C-z shortcut
+  (global-unset-key "\C-z"))            ; Disable the C-z shortcut
 
 ;; ------ Delete <TAB> and trailing whitespaces ------
 (add-hook 'before-save-hook
