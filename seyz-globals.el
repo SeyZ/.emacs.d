@@ -20,3 +20,8 @@
 (when window-system
   (global-unset-key "\C-z"))		; Disable the C-z shortcut
 
+;; ------ Delete <TAB> and trailing whitespaces ------
+(add-hook 'before-save-hook
+          '(lambda ()
+             (delete-trailing-whitespace)
+             (untabify (point-min) (point-max))))

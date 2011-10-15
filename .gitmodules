@@ -1,0 +1,3 @@
+[submodule "vendor/eclim"]
+	path = vendor/eclim
+	url = git@github.com:SeyZ/emacs-eclim.git
