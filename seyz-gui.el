@@ -31,3 +31,9 @@
 ;; ------ Color theme ------
 (autoload 'color-theme-zenburn "color-theme-zenburn" "Zenburn Color Theme" t)
 (color-theme-zenburn)
+
+;; ------ Font ------
+(defvar font-height 120)
+(set-face-attribute 'default nil :family "Anonymous Pro" :height font-height)
+(set-face-attribute 'font-lock-comment-face nil
+		    :family "Anonymous Pro" :height font-height :slant 'italic)
