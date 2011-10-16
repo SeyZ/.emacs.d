@@ -1,5 +1,3 @@
-(global-set-key (kbd "M-n") 'forward-paragraph)
-(global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "C-c C-c") 'comment-region)
 (global-set-key (kbd "C-c M-c") 'uncomment-region)
 (global-set-key (kbd "C-c o") 'bury-buffer)

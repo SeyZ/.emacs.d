@@ -17,3 +17,5 @@
 (load-library "seyz-perspective")
 
 (load-library "seyz-smex")
+
+(load-library "seyz-fastnav")
