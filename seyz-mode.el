@@ -18,4 +18,6 @@
 
 (load-library "seyz-smex")
 
+(load-library "seyz-skeleton")
+
 (load-library "seyz-fastnav")
