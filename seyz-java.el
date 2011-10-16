@@ -3,8 +3,6 @@
 (setq eclim-auto-save t)
 (global-eclim-mode)
 
-(load-library "seyz-ac-yas-eclim")
-
 ;; ------ Indentation ------
 (setq c-basic-offset 2)
 
@@ -24,5 +22,21 @@
                         '(("\\<\\(FIXME\\|TODO\\|BUG\\)"
                            1 font-lock-warning-face t)))
 
-;; ------ Shortcuts ------
-(local-set-key (kbd "C-c i") 'eclim-java-format)
+;; ------ Company mode ------
+(require 'company)
+(require 'company-emacs-eclim)
+
+(setf company-backends nil)
+(company-emacs-eclim-setup)
+
+(add-hook 'eclim-mode-hook (lambda () (company-mode)))
+
+;; ------ Shortcuts -----
+(add-hook 'eclim-mode-hook (function
+                (lambda ()
+                  (local-set-key (kbd "C-c i") 'eclim-java-format)
+                  (local-set-key (kbd "M-RET") 'company-complete))))
+
+
+
+

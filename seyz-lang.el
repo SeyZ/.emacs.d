@@ -1,8 +1,7 @@
 ;; Languages
 
 ;; ------ Java ------
-(add-hook 'java-mode-hook
-	  (lambda () (load-library "seyz-java")))
+(load-library "seyz-java")
 
 ;; ------ Javascript ------
 (autoload 'js2-mode "js2" nil t)
