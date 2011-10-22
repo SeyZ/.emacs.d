@@ -22,5 +22,6 @@
 
 (load-library "seyz-fastnav")
 
+(load-library "seyz-speedbar")
 
 (load-library "seyz-projectile")
