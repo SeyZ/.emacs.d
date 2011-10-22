@@ -21,3 +21,6 @@
 (load-library "seyz-skeleton")
 
 (load-library "seyz-fastnav")
+
+
+(load-library "seyz-projectile")
