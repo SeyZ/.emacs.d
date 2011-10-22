@@ -8,7 +8,6 @@
 
 (setq initial-major-mode 'text-mode)
 (setq default-major-mode 'text-mode)
-(setq default-directory "~/")
 
 (auto-compression-mode 1)
 (setq make-backup-files nil)

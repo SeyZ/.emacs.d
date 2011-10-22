@@ -42,3 +42,5 @@
 ;; Loading global shortcuts
 ;; ----------------------------------------------------------------------------
 (load-library "seyz-shortcut")
+
+(setq default-directory "~/")
