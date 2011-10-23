@@ -12,4 +12,4 @@
 (add-hook 'java-mode-hook (lambda () (setq magit-diff-options '("-w"))))
 
 ;; ------ Shortcuts ------
-(global-set-key (kbd "C-c C-g s") 'magit-status)
+(global-set-key (kbd "C-c g s") 'magit-status)
