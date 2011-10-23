@@ -36,7 +36,3 @@
                 (lambda ()
                   (local-set-key (kbd "C-c i") 'eclim-java-format)
                   (local-set-key (kbd "M-RET") 'company-complete))))
-
-
-
-
