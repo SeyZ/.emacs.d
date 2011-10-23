@@ -12,8 +12,8 @@
 (global-set-key "\M-J" 'execute-at-char-backward)
 (global-set-key "\M-k" 'delete-char-forward)
 (global-set-key "\M-K" 'delete-char-backward)
-(global-set-key "\M-m" 'mark-to-char-forward)
-(global-set-key "\M-M" 'mark-to-char-backward)
+;; (global-set-key "\M-m" 'mark-to-char-forward)
+;; (global-set-key "\M-M" 'mark-to-char-backward)
 
 (global-set-key "\M-p" 'sprint-forward)
 (global-set-key "\M-P" 'sprint-backward)
