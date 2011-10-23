@@ -3,6 +3,9 @@
 (setq eclim-auto-save t)
 (global-eclim-mode)
 
+;; ------ Configuration ------
+(add-hook 'java-mode-hook 'subword-mode)
+
 ;; ------ Indentation ------
 (setq c-basic-offset 2)
 
