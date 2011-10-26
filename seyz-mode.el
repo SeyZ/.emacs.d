@@ -25,3 +25,5 @@
 (load-library "seyz-speedbar")
 
 (load-library "seyz-projectile")
+
+(load-library "seyz-evil-numbers")
