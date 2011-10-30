@@ -71,3 +71,15 @@
   (if hs--hide-state
       (hs-hide-all)
     (hs-show-all)))
+
+;; ------ Duplicate the current line ------
+(defun duplicate-current-line ()
+  (interactive)
+  (beginning-of-line nil)
+  (let ((b (point)))
+    (end-of-line nil)
+    (copy-region-as-kill b (point)))
+  (beginning-of-line 2)
+  (open-line 1)
+  (yank)
+  (back-to-indentation))

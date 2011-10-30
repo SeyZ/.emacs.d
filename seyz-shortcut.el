@@ -5,6 +5,7 @@
 (global-set-key (kbd "C-c j") 'delete-indentation)
 (global-set-key (kbd "C-c C-k") 'copy-line)
 (global-set-key (kbd "C-c M-s") 'occur)
+(global-set-key (kbd "C-c C-/") 'duplicate-current-line)
 (global-set-key (kbd "RET") 'newline-and-indent)
 
 (global-set-key [f1] 'ansi-term)
