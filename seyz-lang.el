@@ -8,3 +8,6 @@
 
 ;; ------ Javascript ------
 (load-library "seyz-js")
+
+;; ------ Jade template engine ------
+(load-library "seyz-jade")
